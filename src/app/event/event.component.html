@@ -1,0 +1,4 @@
+<h3>All Events</h3>
+<ul>
+    <li *ngFor="let event of events" (click)="onClick(event)">{{event.name}}</li>
+</ul>

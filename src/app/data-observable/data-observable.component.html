@@ -1,0 +1,8 @@
+<p *ngIf="!data">{{errorMessage}}</p>
+<div *ngFor="let data of jsonData; let i = index">
+    <ul class="list-group" *ngIf="i < 10">
+        <li class="list-group-item">{{data.id}}</li>
+        <li class="list-group-item">{{data.title | reverse}}</li>
+        <li class="list-group-item">{{data.body}}</li>
+    </ul>
+</div>

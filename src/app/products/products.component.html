@@ -1,0 +1,8 @@
+<p class="alert alert-success" *ngIf="dataFromChild">{{dataFromChild.name + ' : ' + dataFromChild.age}}</p>
+<div *ngFor="let contact of getContacts">
+    <app-product-list [contact]="contact" (notify)="fromChild($event)"></app-product-list>
+</div>
+<div>
+    Hostlistener and HostBinding directives
+</div>
+<div>{{name | reverse}}</div>

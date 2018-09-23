@@ -1,0 +1,17 @@
+[{
+        "name": "Google IO Extended",
+        "location": "USA"
+    },
+    {
+        "name": "TensorFlow Meetup",
+        "location": "NewYork"
+    },
+    {
+        "name": "All Meetup",
+        "location": "UK"
+    },
+    {
+        "name": "Angular Conference",
+        "location": "India"
+    }
+]

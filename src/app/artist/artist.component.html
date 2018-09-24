@@ -1,0 +1,19 @@
+<div class="row">
+    <div class="col-sm-4" *ngFor="let actor of artists">
+        <ul class="list-group">
+            <li class="list-group-item">
+                <div (click)="actors(actor.id)">
+                    <div><img [src]="actor.photo" class="img-responsive img-place" /></div>
+                    <h5 class="text-center text-uppercase">{{actor.name}}</h5>
+                </div>
+                <div class="text-center">
+                    <ul class="list-unstyled social-share">
+                        <li><i class="fa fa-comments-o" aria-hidden="true" (click)="comment(actor)"></i> <span *ngIf="actor.commentCount">{{actor.commentCount}}</span></li>
+                        <li><i class="fa fa-thumbs-o-up" aria-hidden="true" (click)="like(actor)"></i> <span *ngIf="actor.likesCount">{{actor.likesCount}}</span></li>
+                        <li><i class="fa fa-share" aria-hidden="true" (click)="share(actor)"></i> <span *ngIf="actor.sharesCount">{{actor.sharesCount}}</span></li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>

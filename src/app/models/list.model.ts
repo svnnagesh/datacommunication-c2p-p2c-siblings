@@ -11,32 +11,48 @@ export class Data {
     body: string;
 }
 
+export class ArtistModel {
+    id: number;
+    photo: string;
+    name: string;
+    title: string;
+    content: string;
+    likesCount: number
+    sharesCount: number;
+    commentCount: number
+}
+
 export class EventsModel {
-    name:string;
-    location:string;
+    id: number;
+    name: string;
+    location: string;
 }
 
 export class Events {
     private myEvents = [
         {
+            id: 1,
             name: 'Google IO Extended',
             location: 'USA'
         },
         {
-            name:'TensorFlow Meetup',
-            location:'NewYork'
+            id: 2,
+            name: 'TensorFlow Meetup',
+            location: 'NewYork'
         },
         {
-            name:'All Meetup',
-            location:'UK'
+            id: 3,
+            name: 'All Meetup',
+            location: 'UK'
         },
         {
-            name:'Angular Conference',
-            location:'India'
+            id: 4,
+            name: 'Angular Conference',
+            location: 'India'
         }
     ]
 
-        allEvents() {
+    allEvents() {
         return this.myEvents;
     }
 

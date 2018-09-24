@@ -1,0 +1,22 @@
+[{
+        "id": 1,
+        "photo": "../assets/images/vijay.jpg",
+        "name": "Vijay Deverakonda",
+        "title": "Start hero of Arjun Reddy",
+        "content": "A film which he got huge response in his career...",
+        "likesCount": 0,
+        "sharesCount": 0,
+        "commentCount": 0
+    },
+    {
+        "id": 2,
+        "photo": "../assets/images/vijay.jpg",
+        "name": "Rahul",
+        "title": "Start hero of Arjun Reddy",
+        "content": "A film which he got huge response in his career...",
+        "likesCount": 0,
+        "sharesCount": 0,
+        "commentCount": 0
+    }
+
+]
